@@ -34,7 +34,7 @@ function today() {
   let displayHours = hours % 12 || 12; // Convert to 12-hour format
 
   let currentTime = `${displayHours < 10 ? '0' + displayHours : displayHours} : ${today.getMinutes() < 10 ? '0' + today.getMinutes() : today.getMinutes()} : ${today.getSeconds() < 10 ? '0' + today.getSeconds() : today.getSeconds()} ${period}`;
-  let currentDate = `${daysNames[today.getDay()]} , ${today.getDate()} ${monthsNames[today.getMonth()]} ${today.getFullYear()}`;
+  let currentDate = `${daysNames[today.getDay() +6]} , ${today.getDate()} ${monthsNames[today.getMonth()]} ${today.getFullYear()}`;
 
   time.innerHTML = currentTime;
   date.innerHTML = currentDate;
