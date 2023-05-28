@@ -43,15 +43,15 @@ body {
 /* Mobile */ 
 @media (max-width: 500px) {
   .container {
-    width: 50vw;
-    height: 50vw;
+    width: 100vw;
+    height: 100vw;
   }
   #today, #time {
     color: #fff;
-    font-size: 1rem;
+    font-size: 2rem;
   }
   #date {
     color: #fff;
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
 }
