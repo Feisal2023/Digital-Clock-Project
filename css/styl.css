@@ -48,10 +48,10 @@ body {
   }
   #today, #time {
     color: #fff;
-    font-size: 3rem;
+    font-size: 8rem;
   }
   #date {
     color: #fff;
-    font-size: 2rem;
+    font-size: 4rem;
   }
 }
