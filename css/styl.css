@@ -44,14 +44,14 @@ body {
 @media (max-width: 500px) {
   .container {
     width: 100vw;
-    height: 100hw;
+    height: 100vh;
   }
   #today, #time {
     color: #fff;
-    font-size: 8rem;
+    font-size: 2rem;
   }
   #date {
     color: #fff;
-    font-size: 4rem;
+    font-size: 1rem;
   }
 }
