@@ -44,7 +44,7 @@ body {
 @media (max-width: 500px) {
   .container {
     width: 100vw;
-    height: 100hw;
+    height: 100vh;
   }
   #today, #time {
     color: #fff;
