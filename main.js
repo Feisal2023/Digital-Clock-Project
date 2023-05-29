@@ -27,14 +27,14 @@ setInterval(() => {
 function today() {
   let today = new Date();
   let monthsNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-  let daysNames = ["Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"];
+  let daysNames = [ "Sat", "Sun", "Mon", "Tue", "Wed", "Thur", "Fri"];
 
   let hours = today.getHours();
   let period = hours >= 12 ? 'PM' : 'AM';
   let displayHours = hours % 12 || 12; // Convert to 12-hour format
 
   let currentTime = `${displayHours < 10 ? '0' + displayHours : displayHours} : ${today.getMinutes() < 10 ? '0' + today.getMinutes() : today.getMinutes()} : ${today.getSeconds() < 10 ? '0' + today.getSeconds() : today.getSeconds()} ${period}`;
-  let currentDate = `${daysNames[today.getDay() +6]} , ${today.getDate()} ${monthsNames[today.getMonth()]} ${today.getFullYear()}`;
+  let currentDate = `${daysNames[today.getDay() +1]} , ${today.getDate()} ${monthsNames[today.getMonth()]} ${today.getFullYear()}`;
 
   time.innerHTML = currentTime;
   date.innerHTML = currentDate;
